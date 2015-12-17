@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_head_default" />
+
+        <TextView
+            android:id="@+id/tv_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="昵称" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_head"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_thumb_default" />
+
+    <TextView
+        android:id="@+id/tv_taskTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_thumb"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/iv_thumb"
+        android:text="今天是个好日子" />
+
+    <TextView
+        android:id="@+id/tv_taskDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_taskTheme"
+        android:layout_alignStart="@+id/tv_taskTheme"
+        android:layout_below="@+id/tv_taskTheme"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="和一家人出去玩的好高兴，好happy啊。真希望以后天天能这样" />
+</RelativeLayout>
